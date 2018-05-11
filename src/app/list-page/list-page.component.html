@@ -1,1 +1,7 @@
-<p>This will be articles</p>
+<div *ngFor="let article of articles" class="article-display">
+  <img src="{{article.imgUrl}}">
+  <h3>{{article.title}}</h3>
+  <p>{{article.teaser}}</p>
+  <h4>{{article.author}}</h4>
+  <h4>{{article.views}}</h4>
+</div>
