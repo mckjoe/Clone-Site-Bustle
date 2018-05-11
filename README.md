@@ -1,5 +1,7 @@
 # CloneSite (bustle)
 
+<!-- Having trouble depoloying site on firebase.  Making this change so I can make a commit -->
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 #### By Joseph McKinney on May 4th, 2018 through May 11th, 2018.
