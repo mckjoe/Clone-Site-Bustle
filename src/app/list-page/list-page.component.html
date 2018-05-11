@@ -1,11 +1,13 @@
-<div *ngFor="let article of articles | async" (click)="goToArticlePage(article)" class="article-display">
-  <img src="{{article.imgURL}}">
-  <h3>{{article.title}}</h3>
-  <p>{{article.teaser}}</p>
-  <h4>{{article.author}}</h4>
-  <h4>{{article.views}}</h4>
+<div *ngFor="let article of articles | async"  class="article-display">
+  <div (click)="goToArticlePage(article)">
+    <img src="{{article.imgURL}}">
+    <h3>{{article.title}}</h3>
+    <p>{{article.teaser}}</p>
+    <h4>{{article.author}}</h4>
+    <h4>{{article.views}}</h4>
+  </div>
   <div *ngIf="currentRoute === '/admin'">
     {{article.body}}
     <hr>
-    <app-edit-article></app-edit-article>
+    <app-edit-article [selectedArticle]="article"></app-edit-article>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Article } from '../article.model';
 
 @Component({
   selector: 'app-edit-article',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-article.component.css']
 })
 export class EditArticleComponent implements OnInit {
+  @Input() selectedArticle;
 
   constructor() { }
 
