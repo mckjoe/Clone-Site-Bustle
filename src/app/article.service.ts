@@ -17,12 +17,8 @@ export class ArticleService {
     this.articles.push(newArticle);
   }
 
-  getArticleById(articleId: number) {
-    // for (var i = 0; i <= ARTICLES.length - 1; i++) {
-    //   if (ARTICLES[i].id === articleId) {
-    //     return ARTICLES[i];
-    //   }
-    // }
+  getArticleById(articleId: string) {
+  return this.database.object('articles/' + articleId);
   }
 
 }

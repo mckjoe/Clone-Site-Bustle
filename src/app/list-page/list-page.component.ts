@@ -17,8 +17,8 @@ export class ListPageComponent implements OnInit {
     this.articles = this.articleService.getArticles();
   }
 
-  goToArticlePage(clickedArticle: Article) {
-    // this.router.navigate(['articles', clickedArticle.id]);
+  goToArticlePage(clickedArticle) {
+    this.router.navigate(['articles', clickedArticle.$key]);
   }
 
 }

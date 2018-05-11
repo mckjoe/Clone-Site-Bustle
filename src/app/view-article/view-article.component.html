@@ -1,5 +1,5 @@
 <div>
-  <h3>{{articleToDisplay.title}}</h3>
-  <p>{{articleToDisplay.teaser}}</p>
-  <h4>{{articleToDisplay.author}}</h4>
+  <h3>{{(articleToDisplay | async)?.title}}</h3>
+  <p>{{(articleToDisplay | async)?.body}}</p>
+  <h4>{{(articleToDisplay | async)?.author}}</h4>
 </div>
