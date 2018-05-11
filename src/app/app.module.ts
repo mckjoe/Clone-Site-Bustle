@@ -4,10 +4,12 @@ import { AppComponent } from './app.component';
 import { ListPageComponent } from './list-page/list-page.component';
 import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
+import { ViewArticleComponent } from './view-article/view-article.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ListPageComponent
+    ListPageComponent,
+    ViewArticleComponent
   ],
   imports: [
     BrowserModule,
