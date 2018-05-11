@@ -1,7 +1,6 @@
 # CloneSite (bustle)
 
-<!-- Having trouble depoloying site on firebase.  Making this change so I can make a commit -->
-
+## To view deployed page on a live server, vist http://bustle-clone-1a696.firebaseapp.com/
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 #### By Joseph McKinney on May 4th, 2018 through May 11th, 2018.
@@ -66,8 +65,27 @@ I still have a lot of work to do.  I feel like I have the basic functionality as
 6.  I want users to be able to hide articles that they don't want to see on the main display.
 7.  I need to create a bunch more articles to be stored in firebase.  
 
+## Week two finished
+ I was able to get some more functionality into my project by making an option for people to go back to the home screen where all of the articles are.  Ontop of that I was able to make the layout of my project a bit nicer but there is a lot left to do.  I got my project hooked up to firebase just fine, and users can select articles to edit or remove from the database if they would like.  My project is also deployed on firebase, which proved to be a big struggle with my windows operating system until I found the information I needed to realize I just needed to use the command prompt instead of gitbash.  Gitbash wont let you navigate with the arrow keys or make selection in the firebase setup.  
+
+## Week two not finished
+I really had wanted to do more styling with my page, but I ran into some problems along the way with my project that ate up a lot more time than i had intended.  At one point I had added hide buttons to the display of all of the articles, but when I clicked it I accidentally deleted all of my data from firebase, and spent a lot longer than I wanted to trying to track down what the problem was.  I still dont know what happened, but I know I was able to get the project up and running again and i'm super grateful for that, there was a period of time where I thought I had ruined everything.  I was able to get my articles to be a bit more atricly with more relevent photos and adding variety to the fake articles and some more length.  Most of the things I set out to finish this morning got accomplished, minus the remove button from each article.  
 
 
+## Firebase setup Instructions
+* First crearte a free firebase account.
+* Once you've created an account, you should be taken to a user dashboard area, with an option to Create a New Project. Select this option, provide a name for your new project, and select your Country/region from the drop-down menu.
+* You'll then be taken to an "Overview" area. Where you'll be offered three options: Choose the "Add firebase to your web-app" option.  This will open a prompt with credentials in it.
+* Create a file called "api-keys.ts" in the src/app/ directories.  
+* rename variable holding credentials to look like this, but use your new credentials instead of the x's:
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+* Once this is done, go to the firebase webpage, and click the three dots on the right of the project display box.  There should be an option to import .json files.  Choose that and then go to the sample-articles.json file and import it.  This will add sample articles to your firebase project so you will be able to serve the project and view it.  
 
 ## To view in a live development server:
 * Follow instructions located below under "Development Server".  
