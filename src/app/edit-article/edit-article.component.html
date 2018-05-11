@@ -11,5 +11,6 @@
 <label>New Article Body:</label>
 <input [(ngModel)]="selectedArticle.body">
 <br>
-<label>New Article image url:</label>
-<input [(ngModel)]="selectedArticle.imgUrl">
+<!-- <label>New Article image url:</label>
+<input [(ngModel)]="selectedArticle.imgUrl"> -->
+<button (click)="beginUpdatingArticle(selectedArticle)">Update</button>

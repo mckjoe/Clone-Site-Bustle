@@ -18,7 +18,12 @@ export class ArticleService {
   }
 
   getArticleById(articleId: string) {
-  return this.database.object('articles/' + articleId);
+  return this.database.object('/articles/' + articleId);
+  }
+
+  updateArticle(localUpdatedArticle) {
+    let articleEntryInFirebase = this.getArticleById(localUpdatedArticle.$key);
+    articleEntryInFirebase.update({title: localUpdatedArticle.title, author: localUpdatedArticle.author, teaser: localUpdatedArticle.teaser, body: localUpdatedArticle.body})
   }
 
 }
