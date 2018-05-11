@@ -26,6 +26,8 @@ export class ArticleService {
     articleEntryInFirebase.update({title: localUpdatedArticle.title, author: localUpdatedArticle.author, teaser: localUpdatedArticle.teaser, body: localUpdatedArticle.body})
   }
 
+  
+
   deleteArticle(localArticleToDelete) {
     let articleEntryInFirebase = this.getArticleById(localArticleToDelete.$key);
     articleEntryInFirebase.remove();
