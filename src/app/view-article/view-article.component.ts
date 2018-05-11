@@ -19,7 +19,7 @@ export class ViewArticleComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.articleId = parseInt(urlParameters['id']);
     });
-    this.articleToDisplay = this.articleService.getArticleById(this.articleId);
+    // this.articleToDisplay = this.articleService.getArticleById(this.articleId);
   }
 
 }
