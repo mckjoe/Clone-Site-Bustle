@@ -60,7 +60,9 @@ I still have a lot of work to do.  I feel like I have the basic functionality as
 4. I want to add the ability for a user to view an article and be able to go back to the homepage where all of the articles are being displayed so they can pick another.
 5. I want admins to be able to edit the articles, and remove them if need be.  
 4.  I need to have all of my articles along with their details stored in firebase, so that my application shows I know how to hook up firebase and store my imformation there.
-5.  I want users to be able to read all of the articles on my page and have them actually look like articles so I will probably do a lot of styling today.    
+5.  I want users to be able to read all of the articles on my page and have them actually look like articles so I will probably do a lot of styling today.  
+6.  I want users to be able to hide articles that they don't want to see on the main display.
+7.  I need to create a bunch more articles to be stored in firebase.  
 
 
 
