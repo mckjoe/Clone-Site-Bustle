@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../article.model';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-list-page',
   templateUrl: './list-page.component.html',
@@ -14,7 +15,11 @@ export class ListPageComponent implements OnInit {
     new Article("Example 2", "this is another example", "Random Author", "This is another pretend article, hopefully it has been for of education", "https://i.pinimg.com/736x/7a/f1/7f/7af17f1662cea39fa3254e30b08bf305--funny-scary-pictures-pictures-of.jpg", 5),
     new Article("Example 3", "This is a third example", "Joseph Author", "this is the body of this new third article that people can read", "https://i.pinimg.com/originals/84/b1/56/84b1566907247c580d75f7ac181af34d.jpg", 6)
   ];
-  constructor() { }
+  constructor(private router: Router) { }
+
+  goToArticlePage(clickedArticle: Article) {
+    this.router.navigate(['articles', clickedArticle.id]);
+  }
 
   ngOnInit() {
   }
