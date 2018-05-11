@@ -1,5 +1,5 @@
-<div *ngFor="let article of articles" (click)="goToArticlePage(article)" class="article-display">
-  <img src="{{article.imgUrl}}">
+<div *ngFor="let article of articles | async" (click)="goToArticlePage(article)" class="article-display">
+  <img src="{{article.imgURL}}">
   <h3>{{article.title}}</h3>
   <p>{{article.teaser}}</p>
   <h4>{{article.author}}</h4>

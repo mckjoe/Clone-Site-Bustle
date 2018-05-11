@@ -5,6 +5,16 @@ import { ListPageComponent } from './list-page/list-page.component';
 import { routing } from './app.routing';
 import { FormsModule } from '@angular/forms';
 import { ViewArticleComponent } from './view-article/view-article.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +24,9 @@ import { ViewArticleComponent } from './view-article/view-article.component';
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
