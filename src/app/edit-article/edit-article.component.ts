@@ -20,4 +20,10 @@ export class EditArticleComponent implements OnInit {
     this.articleService.updateArticle(articleToUpdate);
   }
 
+  beginDeletingArticle(articleToDelete) {
+    if(confirm("Are you sure you want to delete this article?!?")) {
+      this.articleService.deleteArticle(articleToDelete);
+    }
+  }
+
 }
