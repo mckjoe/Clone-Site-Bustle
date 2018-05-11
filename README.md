@@ -51,9 +51,16 @@ I was able to get most of my specs done today.  I was able to get the webpage to
 
 ### Not Finished
 
-I still have a lot of work to do.  I feel like I have the basic functionality as far as what people can do on Bustle and what they see, but I know I have a lot of work to do after the second week of angular in class.  The first thing I want to work on going forward is getting the articles to be displayed on their own page, or without the distractions of al of the other articles on the page.  Right now my article display is pretty weak.  I also need to remember how to make the input field larger for the article body because it is always really frusturating to a user when they are trying to type but they cant see what they are typing or what they have already typed.
+I still have a lot of work to do.  I feel like I have the basic functionality as far as what people can do on Bustle and what they see, but I know I have a lot of work to do after the second week of angular in class.  The first thing I want to work on going forward is getting the articles to be displayed on their own page, or without the distractions of al of the other articles on the page.  Right now my article display is pretty weak.  I also need to remember how to make the input field larger for the article body because it is always really frustrating to a user when they are trying to type but they cant see what they are typing or what they have already typed.
 
-
+### Week Two
+1.  This weeks work consisted of realizing that most of what I had done last week could have and should have been done in a better way that I didn't yet know about.  I have basically taken my project apart and started it from scratch with last weeks as a reference to what I want to be able to do and what some of the code will look like.  Not to say last weeks project was useless by any means, as a lot of it can be replicated in an easier way after the lessons this week.  
+2.  I need to have all of my components hooked up to a router so that I can change from page to page without just hiding and showing divs with JQuery (Don't want to be serving everyone spaghetti).
+3. Over the week in my spare time I started working on the project to be ready for friday, so at this moment I have a page that shows articles to a user, they can create new articles, and they can view current articles.  I need to make the page have a bit more functionality still.
+4. I want to add the ability for a user to view an article and be able to go back to the homepage where all of the articles are being displayed so they can pick another.
+5. I want admins to be able to edit the articles, and remove them if need be.  
+4.  I need to have all of my articles along with their details stored in firebase, so that my application shows I know how to hook up firebase and store my imformation there.
+5.  I want users to be able to read all of the articles on my page and have them actually look like articles so I will probably do a lot of styling today.    
 
 
 
