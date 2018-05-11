@@ -4,4 +4,8 @@
   <p>{{article.teaser}}</p>
   <h4>{{article.author}}</h4>
   <h4>{{article.views}}</h4>
+  <div *ngIf="currentRoute === '/admin'">
+    {{article.body}}
+    <hr>
+    <app-edit-article></app-edit-article>
 </div>
